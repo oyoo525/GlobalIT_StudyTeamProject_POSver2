@@ -77,7 +77,7 @@ public class Menu implements Choice{
 		System.out.println("취소할 메뉴의 번호를 선택해주세요.");
 		Scanner scan = new Scanner(System.in);
 		int cencelNum = scan.nextInt();
-		System.out.println(cart.get(cencelNum).getName() + " 메뉴가 삭제되었습니다.");
+		System.out.println(cart.get(cencelNum-1).getName() + " 메뉴가 삭제되었습니다.");
 		cart.remove(cencelNum-1);
 	}
 
